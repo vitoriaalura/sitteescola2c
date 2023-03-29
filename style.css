@@ -1,9 +1,15 @@
+*{margin: 0;
+   padding: 0;
+  }
+
 header{background-color: blueviolet;
 color: black;
 display: flex;
-justify-content: space-around;}
+justify-content: space-around;
+padding: 24px 0;}
+
+
 .cabecalho-imagem{width: 13%;}
- 
  
  h1
   {margin: 0 60px;
@@ -15,3 +21,10 @@ margin:  0px;
 padding: 60px;
 font-size:35px;}
 
+.escola-imagem{
+            width: 20%;
+            }    
+.escola {
+    background-image: linear-gradient(red, blueviolet);
+    color: rgb(51, 53, 61);
+}             
