@@ -1,8 +1,9 @@
 *{margin: 0;
    padding: 0;
   }
+body {font-family: Verdana, Geneva, Tahoma, sans-serif;}
 
-header{background-color: blueviolet;
+header{background-color: rgb(14, 233, 43);
 color: black;
 display: flex;
 justify-content: space-around;
@@ -25,6 +26,9 @@ font-size:35px;}
             width: 20%;
             }    
 .escola {
-    background-image: linear-gradient(red, blueviolet);
+    background-image: linear-gradient(rgb(32, 204, 247), rgb(138, 46, 130));
     color: rgb(51, 53, 61);
-}             
+    display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 24px 0;}
