@@ -1,77 +1,170 @@
-    <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css"><link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
-
-</head>
-<header class="cabecalho"> 
-    <img class="imagem-cabecalho" src="./img/logo.png" alt="logo do colegio Claudino">
-    <h1 class="cabecalho-titulo">Colégio Dr Claudino dos Santos</h1>
-    <u1>
-        <li>alunos</li>
-        <li>biblioteca</li>
-        <li>cantina</li>
-    </u1>
-</header>
-<section class="escola">
-    <h2 class="escola-titulo">sobre a escola</h2>
-    <div class="escola-conteudo">
-  <p class="escola-texto-um">O Colégio Estadual Dr. Claudino dos Santos foi criado em 06 de outubro de 1914. Recebeu este nome em homenagem a Claudino Dagoberto Ferreira dos Santos. Dr. Claudino foi um personagem de destaque em sua época, homem culto e de inteligência privilegiada. Foi bacharel em direito, poeta, escritor e jornalista. Amava apresentações teatrais e literatura. Foi o fundador do Colégio Estadual do Paraná. Apesar de ter nascido no Recife, foi um personagem marcante na história do Paraná, exercendo importantes cargos como: Secretário do interior e da justiça, secretário de instrução pública, diretor do Colégio Estadual do Paraná e prefeito de Curitiba. Inicialmente o Colégio funcionava no prédio, atualmente tombado pelo patrimônio histórico, onde se situa a casa da cultura. No entanto, com o passar dos anos, o número de alunos foi crescendo mais e mais e foi necessária a construção de novas instalações. O Colégio Claudino está sob direção do Professor Fernando Colodel e Diretor Auxiliar Professor Gabriel Ferro, a Equipe é formada por 57 professores, 15 Agentes Educacionais, 01 Secretário e a Equipe Pedagógica é composta por 05 Professoras Pedagogas</p>  
-  <p class="escola-texto-dois">Visando atender a comunidade escolar enfatizando a gestão democrática e contando com o apoio de uma APMF atuante, além das outras instâncias Colegiadas Como Conselho Escolar e Grêmio Estudantil. Atualmente o Colégio Claudino conta com 983 alunos, distribuídos nos turnos da manhã, tarde e noite, Dentre as modalidades de ensino ofertadas à população estão: Ensino Fundamental fase II, Ensino Médio, Ensino profissionalizante e Educação de Jovens e Adultos. EJA, Projetos de contra turno como Programa Mais Aprendizagem, Edutech – Games e Programação e Hora treinamento. SOMOS NA ATUALIDADE UM GRANDE COLÉGIO COM ENORMES DESAFIOS!!!</p>
-<img class="escola-imagem" src="./img/cr.png">
-<div>
-</section>
-<section class="estudante">
-<h2 class="estudante-titulo"> quem são nossos estudantes?</h2>
-
-
-<div class="estudantes-todos">
-
-
-<div class="estudante-div">
-<img class="aluno-um" src="./img/alunos.png">
-<h3>carla,paulo,joana</h3>  
-    <img class="estudante-icone" src="./img/tiktok.png">
-    <img class="estudante-icone" src="./img/instagram.png">
-    <img class="estudante-icone" src="./img/facebook.png">
-</div>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width-device-width" initial-scale="1.0">
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>     
+    
+    </head>
+    <body>
+     <header class="cabeçalho"> 
 
 
 
-<div class="estudante-div">
-    <img class="aluno-um" src="./img/leao.png">
-    <h3>leao</h3>  
-        <img class="estudante-icone" src="./img/tiktok.png">
-        <img class="estudante-icone" src="./img/facebook.png">
-        <img class="estudante-icone" src="./img/instagram.png">
+<div class="container">
+    <input type="checkbox" id="menu" class="container_botão">
+    
+    <label for="menu">
+<span class="cabeçalho_menu-hamburguer  container_imagem"> </span>
+    </label>
+    <ul class="lista-menu">
+        <li class="lista-menu__titulo">Categorias</li>
+<li class="lista-menu__item">
+<a href="#" class="lista-menu__link">Programação</a>
+</li>
+<li class="lista-menu__item">
+<a href="#" class="lista-menu__link">Front-end</a>
+</li>
+<li class="lista-menu__item">
+<a href="#" class="lista-menu__link">Infraestrutura</a>
+</li>
+<li class="lista-menu__item">
+<a href="#" class="lista-menu__link">Business</a>
+</li>
+<li class="lista-menu__item">
+<a href="#" class="lista-menu__link">Design & UX</a>
+</li>
+    </ul>
+
+<img src="./img/logo.svg"  class="container_imagem">
     </div>
-
-
-    <div class="estudante-div">
-        <img class="aluno-um" src="./img/urso panda.png">
-        <h3>urso panda</h3>  
-            <img class="estudante-icone" src="./img/tiktok.png">
-            <img class="estudante-icone" src="./img/instagram.png">
-            <img class="estudante-icone" src="./img/facebook.png">
+        <div class="container">
+        <img src="./img/Favoritos.svg" class="container_imagem">
+        <img src="./img/Compras.svg" class="container_imagem">
+        <img src="./img/Usuario.svg" class="container_imagem">
         </div>
- <div class="estudante-div">
-            <img class="aluno-um" src="./img/gato.png">
-            <h3>gato</h3>  
-                <img class="estudante-icone" src="./img/tiktok.png">
-                <img class="estudante-icone" src="./img/instagram.png">
-                <img class="estudante-icone" src="./img/facebook.png">
-            </div>
+
+            </header>
+
+   <section class="banner">
+    <h2 class="banner-titulo"> Já sabe por onde começar? </h2>
+</section>
+    <p class="banner-texto"> Encontre em nossa estante o que precisa para
+         seu desenvolvimento! </p>
+         <input type="search" class="banner-pesquisa"
+          placeholder="Qual será sua próxima leitura?">
+
+   </section>    
+   <section class="carrossel">
+    <h2 class="carrossel__titulo">Novos lançamentos</h2>
+    
+    <div class="swiper">
+         <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+    
+    <!-- Slider main container -->
+<div class="swiper">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      <div class="swiper-slide"><img src="./img/MetricasAgeis.svg"></div>
+      <div class="swiper-slide"><img src="./img/Arquitetura.svg"></div>
+      <div class="swiper-slide"><img src="./img/Tuning.svg"></div>
+      <div class="swiper-slide"><img src="./img/Nodejs.svg"></div>
+
+    </div>
+   
+  
+    <!-- If we need scrollbar -->
+    <div class="swiper-scrollbar"></div>
+  </div>
+
+<div class="card">
+
+<div class="card-descricao">
+<div class="descriscao">
+
+    <h3 class="descricao-titulo">Talvez voce também se interessa por...</h3>
+    <h2 class="descricao-titulo-livro">Angular 11 e Firebase</h2>
+    <p class="descricao-texto">Construindo uma aplicaçao integrada com a plataforma do Google.</p>
 </div>
+
+<img src="./img/Angular.png" class="descrisao-imagem">
+</div>
+    
+<div class="card-botoes">
+<!--primeira coluna-->
+<ul class="botoes">
+    <li class="botoes-item"><img src="./img/Favoritos.svg"></li>
+    <li class="botoes-item"><img src="./img/Compras.svg"></li>
+
+</div>
+
+
+
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+<script>
+const swiper = new Swiper('.swiper', {
+  spaceBetween: 10,
+  slidesPerView: 4,
+  pagination: {
+    el: '.swiper-pagination',
+    type: 'bullets',
+  },
+
+
+
+  
+
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </body>
+</html>
+                
+    </header>
 
 </section>
 
-<footer>
-<h2>Dr Claudino dos Santos</h2>
+</body></header>
 
-</footer>
+</html>
+</header>

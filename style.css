@@ -1,62 +1,173 @@
-*{margin: 0;
-   padding: 0;
-  }
-body {font-family: Verdana, Geneva, Tahoma, sans-serif;}
+:root{
+    --cor-de-fundo:#EBECEE;
+    --branco: #FFFFFF;
+    --laranja: #EB9B00;
+    --azul-degrade: linear-gradient(97.54deg, #002F52 35.49%, #326589 165.37%);
+    --fonte-principal: "Poppins";
+}
+body{
+    background-color: var(--cor-de-fundo);
+    font-family: var(--fonte-principal);
+    font-size: 1em;
+    font-weight: 700;
 
-header{background-color: rgb(14, 233, 43);
-color: black;
-display: flex;
-justify-content: space-around;
-padding: 24px 0;}
-
-
-.cabecalho-imagem{width: 13%;}
- 
- h1
-  {margin: 0 60px;
-    padding: 120px 0;
- font-size: 40px;}
- li{
-   display: inline-block;
-margin:  0px;
-padding: 60px;
-font-size:35px;}
-
-.escola-imagem{
-            width: 20%;
-            }    
-.escola {
-    background-image: linear-gradient(rgb(32, 204, 247), rgb(138, 46, 130));
-    color: rgb(51, 53, 61);
-    display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  padding: 24px 0;}
-.aluno-um{
-  width: 40%;
-height: 150px;}
+}
 
 
-  .estudante-titulo {
+.cabeçalho_menu-hamburguer {
+    width: 24px;
+    height: 24px;
+    background-image: url(./img/Menu.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;
+    
+}
+
+
+
+.cabeçalho {
+        background-color: #FFFFFF;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        }
+
+
+
+
+
+        
+.container {
+            display: flex;
+            align-items: center;
+            }
+
+.container_imagem {
+            padding: 1em;
+            margin: 1em;
+            width: 5em;
+
+                }
+ .container_botão:checked ~ .lista-menu {
+                    display: block;
+                    }
+                    
+.lista-menu {
+ display: inline-block;
+ position: absolute;
+ top: 100%;
+ width: 20vw;
+                    }
+
+ .lista-menu__titulo,
+ .lista-menu__item {
+        padding: 1em;
+        background-color: var(--branco);
+                    }
+
+.lista-menu__titulo {
+                        color: var(--laranja);
+                    font-weight: 700;}
+
+
+                        
+.lista-menu__link {
+                           background: var(--azul-degrade);
+                           -webkit-background-clip: text;
+                           -webkit-text-fill-color: transparent;
+                           background-clip: text;
+                           text-transform: uppercase;
+                                       }
+.container_botão {
+    display: none;
+}
+
+.lista-menu {
+    display: none;
+}
+
+.banner{
+    background-color: #002F52;
+    color: #EBECEE;
     text-align: center;
-    padding: 50px 0;
-    font-size: 30px;
-  }
-  .estudante-icone
-  {width: 100px;}
-  .estudante-div {
-    text-align: center;
-  }
-.estudantes-todos{
-  display:grid;
-  grid-template-columns: 25% 25% 25% 25%;
-}
-footer {
-background-color: rgba(255, 0, 149, 0.644);
-color: black;
-}
-.estudante{
-background-color: rgba(255, 0, 255, 0.5);
-}
-
   
+}
+.banner-titulo{
+    font-size: 60px;
+    font-weight: 700;
+}
+.banner-texto{
+    font-weight: 500;
+    font-size: 40px;
+    text-align: justify;
+    text-align: center;
+}
+
+.banner-pesquisa {
+    background-color: transparent;
+    border: 2px solid black;
+    color: black;
+    border-radius: 24px;
+    padding: 1em;
+    width: 100%;
+    text-align: center;
+    background: url("./img/lupa.svg") no-repeat ;
+    background-position: 1em;
+    font-size: 20px;
+    }
+
+
+    .swiper-pagination {
+        position:initial;
+        margin: 23em 0;
+        }
+    
+
+
+.carrossel__titulo {
+        color: var(--laranja);
+        background-color: var(--branco);
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 18px;
+        font-weight: 700;
+        padding: 1em 0 0.5em 0;
+        }
+.swiper-slide img {
+            width: 20%;
+            } 
+ .card-descricao{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0,5em;
+ } 
+
+ .card-botoes{
+    display: flex;
+    justify-content: space-between;
+ }          
+
+ .botoes{
+    display: flex;
+ }
+
+
+
+
+ .card{
+    background: var(--branco);
+    box-shadow: 0px 4px 4px rgb(196, 12, 156);
+    border-radius: 10px;
+    margin: 1em;
+    padding: 1em;
+
+ }
+
+
+ .descricao-titulo{
+    color: rgb(165, 21, 21);
+    font-weight: 700;
+ }
+
