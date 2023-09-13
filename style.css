@@ -1,173 +1,208 @@
 :root{
-    --cor-de-fundo:#EBECEE;
-    --branco: #FFFFFF;
-    --laranja: #EB9B00;
-    --azul-degrade: linear-gradient(97.54deg, #002F52 35.49%, #326589 165.37%);
-    --fonte-principal: "Poppins";
+    --cor-de-fundo:#ccd6f1a6;
+    --branco:#ffffff;
+    --laranja: #000000;
+    --azul-degrade: linear-gradient(97.54deg, #fff7f7 35.49%, #fdfdfd 165.37%);
+    ---fonte-principal:"poppins";
 }
+
 body{
     background-color: var(--cor-de-fundo);
-    font-family: var(--fonte-principal);
-    font-size: 1em;
-    font-weight: 700;
-
+    font-family: var(---fonte-principal);
 }
 
-
-.cabeçalho_menu-hamburguer {
-    width: 24px;
-    height: 24px;
+.cabecalho-menu-hamburguer{
+    width: 44px;
+    height: 44px;
     background-image: url(./img/Menu.svg);
     background-repeat: no-repeat;
     background-position: center;
     display: inline-block;
-    
+}
+
+.cabecalho{
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    margin: -0.5em;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+}
+
+.container_imagem{
+    padding: 10px;
+    margin: 10px;
+    width: 40px;
+}
+
+.container-botao:checked ~ .lista-menu {
+    display: block;
+}
+
+.lista-menu{
+    display: inline-block;
+    position: absolute;
+    top: 100%;
+    width: 20ww;
+}
+
+.lista-menu-titulo,
+.lista-menu-item {
+    padding: 1em;
+    background-color: var(--branco);
 }
 
 
-
-.cabeçalho {
-        background-color: #FFFFFF;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        position: relative;
-        }
+.lista-menu-titulo{
+    color: var(--laranja);
+    font-weight: 700;
+}
 
 
-
-
-
-        
-.container {
-            display: flex;
-            align-items: center;
-            }
-
-.container_imagem {
-            padding: 1em;
-            margin: 1em;
-            width: 5em;
-
-                }
- .container_botão:checked ~ .lista-menu {
-                    display: block;
-                    }
-                    
-.lista-menu {
- display: inline-block;
- position: absolute;
- top: 100%;
- width: 20vw;
-                    }
-
- .lista-menu__titulo,
- .lista-menu__item {
-        padding: 1em;
-        background-color: var(--branco);
-                    }
-
-.lista-menu__titulo {
-                        color: var(--laranja);
-                    font-weight: 700;}
-
-
-                        
-.lista-menu__link {
-                           background: var(--azul-degrade);
-                           -webkit-background-clip: text;
-                           -webkit-text-fill-color: transparent;
-                           background-clip: text;
-                           text-transform: uppercase;
-                                       }
-.container_botão {
+.lista-menu-link{
+    background: var(--azul-degrade);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-transform: uppercase;
+}
+         
+.container-botao {
     display: none;
 }
 
-.lista-menu {
+.lista-menu{
     display: none;
 }
 
 .banner{
-    background-color: #002F52;
-    color: #EBECEE;
+    background-color: rgba(54, 17, 114, 0.808);
+    color: rgb(255, 255, 255);
     text-align: center;
-  
+    font-size: 30px;
 }
+
 .banner-titulo{
     font-size: 60px;
     font-weight: 700;
-}
-.banner-texto{
-    font-weight: 500;
-    font-size: 40px;
-    text-align: justify;
-    text-align: center;
+    padding: 50px;
 }
 
-.banner-pesquisa {
-    background-color: transparent;
-    border: 2px solid black;
-    color: black;
+.banner-texto{
+    font-weight: 400;
+}
+
+.pesquisa{
+    background-color: rgb(255, 81, 81);
+    border: rgb(0, 0, 0);
+    color: rgb(7, 7, 7);
     border-radius: 24px;
     padding: 1em;
     width: 100%;
     text-align: center;
-    background: url("./img/lupa.svg") no-repeat ;
+    background: url("./img/lupa.svg") no-repeat;
     background-position: 1em;
     font-size: 20px;
+}
+
+
+ .carrossel-titulo{
+color: #EB9B00;
+background-color: var(--branco);
+text-align: center;
+text-transform: uppercase;
+font-size: 25px;
+font-weight: 700;
+padding: 1em 0 0.5em 0;
     }
 
+.swiper-slide img{
+    width: 70%;
+   padding: 10px 60px; }
 
-    .swiper-pagination {
-        position:initial;
-        margin: 23em 0;
-        }
-    
-
-
-.carrossel__titulo {
-        color: var(--laranja);
-        background-color: var(--branco);
-        text-align: center;
-        text-transform: uppercase;
-        font-size: 18px;
-        font-weight: 700;
-        padding: 1em 0 0.5em 0;
-        }
-.swiper-slide img {
-            width: 20%;
-            } 
- .card-descricao{
+.card-descricao{
     display: flex;
     justify-content: space-between;
-    margin-bottom: 0,5em;
- } 
+    margin-bottom: 0,4em;
+}
 
- .card-botoes{
-    display: flex;
+.card-botoes{
+    display:flex ;
     justify-content: space-between;
- }          
+}
 
- .botoes{
+.botoes{ 
     display: flex;
- }
 
+}
 
+.card{
+    background-color: #ffffffb7;
+    border-radius: 50px;
+    display: center;
+    margin: 3em 5em;
+    align-items:flex-start;
+    padding: 2em 5em;
+}
 
-
- .card{
-    background: var(--branco);
-    box-shadow: 0px 4px 4px rgb(196, 12, 156);
-    border-radius: 10px;
-    margin: 1em;
-    padding: 1em;
-
- }
-
-
- .descricao-titulo{
-    color: rgb(165, 21, 21);
+.titulo-mais-vendidos{
+    text-align: center;
+    font-size:28px;
+    color: #EB9B00;
     font-weight: 700;
- }
+    background-color: white;
+    margin: 3em 2em;
+    padding: 1em 1em;
+    border-radius: 1em;
+}
 
+.mais-vendidos-livros{
+    height: 380px;
+}
+
+.botoes-itens{
+    margin: 6px;
+}
+
+.descricao-finalum{
+    font-size: 28px;
+    margin: 1em;
+    color: #EB9B00;
+    font-weight: 700;
+}
+
+.descricao-finaldois{
+    font-size: 30px;
+    margin:1em;
+    font-weight: 700;
+}
+
+.botoes-ancora{
+    background-color: #EB9B00;
+    padding: 1em 1em;
+    color: var(--branco);
+    font-weight: 700;
+    text-decoration: none;
+    border-radius: 1em;
+    margin: 10px;
+}
+
+.descricao-imagem2{
+    width: 18%;
+}
+
+.topicos{
+    background-color: #002F52;
+    text-align: center;
+}
+
+.titulo-topicos{
+    color: #EBECEE;
+    font-size: 500;
+    font-display: 20px;
+}
